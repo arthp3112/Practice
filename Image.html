@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .image
+        {
+            
+            width: 500px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s;
+
+            position: relative;
+            
+        }
+
+        .bg1
+        {
+            background: url(bottom.jpg);
+            background-size: cover;
+            background-position: -10px 0;
+            border: rgba(255, 255, 255, 0.281) solid 15px;
+            background-origin: border-box;
+
+        }
+
+        .image:hover 
+        {
+            background-position: 0px 0px ;
+        }
+
+        .efft
+        {
+            height: 200px;
+            width: 85%;
+            /* background: gray; */
+            border: white solid 5px;
+            color: white;
+            font-size: 20px;
+            font-family: cursive;
+            padding: 120px 0 0 170px;
+            letter-spacing: 5px;
+            /* display: none; */
+            opacity: 0;
+            transition: .3s;
+            transform: translate(-10px,0);
+
+            
+        }
+
+        .image:hover .efft
+        {
+        /* display: block; */
+        opacity: 1;
+        transform: translate(0px,0px);
+        }
+
+        p
+        {
+            font-size: 28px;
+            color: white;
+            position: absolute;
+            top: 120px;
+            left: 220px;
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="image bg1">
+
+        <p><span style="color: red;">F</span>ALL AHEAD</p>
+
+        <div class="efft">New Arrivals</div>
+
+    </div>
+    
+</body>
+</html>
